@@ -99,7 +99,7 @@
           </ul>
         </div>
       </section>
-      <!-- what_we_do section -->
+      <!-- what-we-do section -->
       <section class="work-process section">
         <div class="work-process-container container">
           <h2 class="sabtitle">Чем мы занимаемся</h2>
@@ -112,7 +112,7 @@
                 width="370"
                 height="294"
               />
-              <h3 class="work_process_subtitle">Десктопные приложения</h3>
+              <h3 class="work-process-subtitle">Десктопные приложения</h3>
             </li>
             <li class="work-process-item">
               <img
@@ -122,7 +122,7 @@
                 width="370"
                 height="294"
               />
-              <h3 class="work_process_subtitle">Мобильные приложения</h3>
+              <h3 class="work-process-subtitle">Мобильные приложения</h3>
             </li>
             <li class="work-process-item">
               <img
@@ -132,7 +132,7 @@
                 width="370"
                 height="294"
               />
-              <h3 class="work_process_subtitle">Дизайнерские решения</h3>
+              <h3 class="work-process-subtitle">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -370,7 +370,7 @@
     <!-- footer section -->
     <footer class="footer">
       <div class="footer-container container">
-        <div>
+        <div class="footer-contact-container">
           <a class="logo link" lang="en" href="index.html">
             Web<span class="logo-footer">Studio</span>
           </a>
@@ -427,8 +427,25 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-container">
+          <h3 class="footer-socials-title">Подпишитесь на рассылку</h3>
+          <form class="footer-form">
+            <label class="footer-form-field">
+              <input class="footer-input" type="email" placeholder="E-mail" />
+            </label>
+            <button class="footer-form-btn button" type="submit">
+              <div class="footer-btn-content">
+                <p class="footer-btn-name">Подписаться</p>
+                <svg class="footer-btn-icon" width="24" height="24">
+                  <use href="./images/icons.svg#telegram"></use>
+                </svg>
+              </div>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -436,6 +453,60 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="contact-form-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="contact-form">
+          <label class="contact-form-field">
+            <!-- <span class="contact-label">Имя</span> -->
+            Имя
+            <div class="contact-form-container">
+              <input class="contact-form-input" type="text" name="name" />
+              <svg class="contact-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-form"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="contact-form-field">
+            Телефон
+            <div class="contact-form-container">
+              <input class="contact-form-input" type="tel" name="phone" />
+              <svg class="contact-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-form"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="contact-form-field">
+            Почта
+            <div class="contact-form-container">
+              <input class="contact-form-input" type="email" name="mail" />
+              <svg class="contact-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-form"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="contact-form-field textarea-field">
+            Комментарий
+            <textarea
+              class="texarea-input contact-form-input"
+              name="user-message"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <div class="checkbox-container">
+            <input
+              class="checkbox-form visually-hidden"
+              type="checkbox"
+              value="license"
+              id="license"
+            />
+            <label class="checkbox-field" for="license"
+              ><p>Соглашаюсь с рассылкой и принимаю&nbsp;</p>
+              <a class="license-link" href="">Условия договора</a>
+              <span class="checkbox-icon"></span>
+            </label>
+          </div>
+
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

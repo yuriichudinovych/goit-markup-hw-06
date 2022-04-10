@@ -684,6 +684,7 @@ body {
 }
 
 .contact-form-container {
+  display: block;
   margin-top: 4px;
   position: relative;
 }
